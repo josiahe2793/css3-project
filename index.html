@@ -1,115 +1,191 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
-     <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Cormorant+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Cormorant+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto" rel="stylesheet">
     <title>index.html</title>
-    <style> 
-   
-   
-   #back { 
-        background:linear-gradient(to bottom right, MidnightBlue,Steelblue);
-        background-size:cover;
-        position:absolute; 
-        top: 0; 
-        left: 0; 
-        min-width: 100%;
-        min-height: 100%;
-        z-index:-1;
-       }
-    
-    #head { 
-        font-family:Cinzel;
-        color:white;
-        position:absolute;
-        right:50%;
-        transform: translate(50%);
+    <style>
         
-    }
-    
-    #text { 
-        position:absolute;
-        color:white;
-        right:50%;
-        bottom:70%;
-        transform:translate(60%,150%);
-        text-shadow:5px 5px black;
-        z-index:-1;
+        #back {
+            background: linear-gradient(to bottom right, MidnightBlue, Steelblue);
+            background-size: cover;
+            position: absolute;
+            background-attachment:fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        #head {
+            font-family: Cinzel;
+            color: white;
+            position: absolute;
+            right: 50%;
+            transform: translate(50%);
+
+        }
+
+        #text {
+            position: absolute;
+            color: white;
+            right: 50%;
+            bottom: 70%;
+            transform: translate(60%, 150%);
+            text-shadow: 5px 5px black;
+            z-index:-1;
+            font-size: 22px;
+
+        }
+
+        #sub {
+            font-family: Cinzel;
+            width: 230px;
+            border: 0px solid red;
+            border-left: 0px solid red;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            position: absolute;
+            transform: translate(369%, 150%);
+            color: white;
+
+        }
+
+        #pre {
+            font-family: Cormorant+Garamond;
+            position absolute;
+            color: white;
+            right:50%;
+            bottom:70%;
+            transform: translate(-.2%, -400%)
+            z-index:-1;
+        }
+      
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+
+        }
+
+        li {
+            float: left;
+
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: MidnightBlue;
+
+        }
+
+        li.dropdown {
+            display: inline-block;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+        }
         
-    }
+        
+        
+        
+        
+        
+        #tran {
+            
+    width: 100px;
+    height: 100px;
+    transform:translate(150%,50px);
+    position:relative;
     
-    #sub { 
-           font-family:Cinzel;
-           width: 230px;
-	       border: 0px solid red;
-	       border-left: 0px solid red;
-	       border-top:2px solid white;
-	       border-bottom:2px solid white;
-	       position:absolute;
-           transform:translate(245%,150%);
-           color:white;
-         
-    }
-    
-  
+    animation-name: work;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: color 0.5s;
+    transition-delay: 6s;
+}
+#tran:hover{
+    width:120px;  height:120px;
+}
 
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+@keyframes work {
+    0%   { left:0px; top:0px;}
+    15%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+}
+
+#center{
+       width: 100px;
+    height: 100px;
+    transform:translate(150%,35px);
+    position:relative;
    
+    animation-name: fol;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: color 0.2s ;
+    }
+#center:hover {
+    color:white;
 }
 
-li {
-    float: left;
-    
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: MidnightBlue;
-    
-}
-
-li.dropdown {
-    display: inline-block;
-    
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-   
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
- 
+@keyframes fol {
+    0%   { left:0px; top:0px;}
+    15%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
 }
 
 
@@ -117,50 +193,64 @@ li.dropdown {
 
 
 
-</style>
+    </style>
 </head>
-  <body>
-    
-  <div id="back"></div>
-    
-  <div id="head"> 
-  <h1>Josiah Capital</h1></div>
- 
-  <div id="sub">
-  <center><p>The Josiah Organization</p></center>
-  </div>
-  
- 
-  
-<br><br><br><br><br><br><br><br><br>
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">Investments</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-    <div class="dropdown-content">
-      <a href="#">Knowing the Branches</a>
-      <a href="#">#Josiah2060</a>
-      <a href="#">Link 3</a>
-    </div>
-  </li>
-</ul>
-<br><br>
 
-<div id="text">
- <p>New beginnings start here 
- 
-   Josiah Capital, Inc. is a leading global investment banking, securities and investment management firm that provides a wide range of financial services to a substantial and diversified client base that includes corporations, financial institutions, governments and individuals
- 
-     Founded in 2018, the firm is headquartered in New York <p>
- Investment in the campaign of our founder Josiah ElBey's Presidential bid is our chief cornerstone
- </p> 
-  </div>
+<body>
+
+    <div id="back"></div>
+
+    <div id="head">
+        <h1>Josiah Capital</h1>
+    </div>
+
+    <div id="sub">
+        <center>
+            <p>The Investment Group</p>
+        </center>
+    </div>
+
+
+
+    <br><br><br><br><br><br><br><br><br>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">Investments</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">The Campaign</a>
+            <div class="dropdown-content">
+                <a href="#">Knowing the Branches</a>
+                <a href="#">#Josiah2060</a>
+                <a href="#">Endorse Josiah</a>
+            </div>
+        </li>
+    </ul>
+    <br><br>
+
+    <div id="text">
+        <p>
+
+            Josiah Capital, Inc. is a leading global investment banking, securities and investment management firm that provides a wide range of financial services to a substantial and diversified client base that includes corporations, financial institutions, governments
+            and individuals. Founded in 2018, the firm is headquartered in New York.
+            <p>
+                Investment in the campaign of our founder Josiah ElBey's Presidential bid is our chief cornerstone
+            </p>
+    </div>
+
+    <div id="pre">
+        <center>
+            <h3>New Beginnings Start Here</h3>
+        </center>
+    </div>
+
+    <div id="tran">
+    <img src="image/wrien.png" alt="written" align="left" height="100" width="100"></div>
+   <div id="center"><p>Work in Progress </p></p></div>
+    
+    
+    
+    
 
 </body>
+
 </html>
-
-
-
-
-
