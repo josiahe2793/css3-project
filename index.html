@@ -7,12 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto" rel="stylesheet">
     <title>index.html</title>
     <style>
-        
         #back {
             background: linear-gradient(to bottom right, MidnightBlue, Steelblue);
             background-size: cover;
             position: absolute;
-            background-attachment:fixed;
+            background-attachment: fixed;
             top: 0;
             left: 0;
             min-width: 100%;
@@ -36,7 +35,7 @@
             bottom: 70%;
             transform: translate(60%, 150%);
             text-shadow: 5px 5px black;
-            z-index:-1;
+            z-index: -1;
             font-size: 22px;
 
         }
@@ -49,7 +48,7 @@
             border-top: 2px solid white;
             border-bottom: 2px solid white;
             position: absolute;
-            transform: translate(369%, 150%);
+            transform: translate(245%, 150%);
             color: white;
 
         }
@@ -58,12 +57,11 @@
             font-family: Cormorant+Garamond;
             position absolute;
             color: white;
-            right:50%;
-            bottom:70%;
-            transform: translate(-.2%, -400%)
-            z-index:-1;
+            right: 50%;
+            bottom: 70%;
+            transform: translate(-.2%, -400%) z-index:-1;
         }
-      
+
 
 
         ul {
@@ -127,72 +125,99 @@
             display: block;
 
         }
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         #tran {
-            
-    width: 100px;
-    height: 100px;
-    transform:translate(150%,50px);
-    position:relative;
-    
-    animation-name: work;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition: color 0.5s;
-    transition-delay: 6s;
-}
-#tran:hover{
-    width:120px;  height:120px;
-}
+
+            width: 100px;
+            height: 100px;
+            transform: translate(150%, -10px);
+            position: relative;
+
+            animation-name: work;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transition: color 0.5s;
+            transition-delay: 6s;
+        }
+
+        #tran:hover {
+            width: 120px;
+            height: 120px;
+        }
 
 
-@keyframes work {
-    0%   { left:0px; top:0px;}
-    15%  { left:200px; top:0px;}
-    50%  { left:200px; top:200px;}
-    75%  { left:0px; top:200px;}
-    100% { left:0px; top:0px;}
-}
+        @keyframes work {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+            15% {
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
 
-#center{
-       width: 100px;
-    height: 100px;
-    transform:translate(150%,35px);
-    position:relative;
-   
-    animation-name: fol;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition: color 0.2s ;
-    }
-#center:hover {
-    color:white;
-}
+        #center {
+            width: 100px;
+            height: 100px;
+            transform: translate(150%, -15px);
+            position: relative;
 
-@keyframes fol {
-    0%   { left:0px; top:0px;}
-    15%  { left:200px; top:0px;}
-    50%  { left:200px; top:200px;}
-    75%  { left:0px; top:200px;}
-    100% { left:0px; top:0px;}
-}
+            animation-name: fol;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transition: color 0.2s;
+        }
 
+        #center:hover {
+            color: white;
+        }
 
-
-
-
-
+        @keyframes fol {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+            15% {
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
     </style>
 </head>
 
@@ -201,12 +226,12 @@
     <div id="back"></div>
 
     <div id="head">
-        <h1>Josiah Capital</h1>
+        <h1> ₡ Josiah Capital </h1>
     </div>
 
     <div id="sub">
         <center>
-            <p>The Investment Group</p>
+            <p>Investment Group</p>
         </center>
     </div>
 
@@ -221,6 +246,7 @@
             <div class="dropdown-content">
                 <a href="#">Knowing the Branches</a>
                 <a href="#">#Josiah2060</a>
+                <a href="#">My Policies</a>
                 <a href="#">Endorse Josiah</a>
             </div>
         </li>
@@ -244,12 +270,15 @@
     </div>
 
     <div id="tran">
-    <img src="image/wrien.png" alt="written" align="left" height="100" width="100"></div>
-   <div id="center"><p>Work in Progress </p></p></div>
-    
-    
-    
-    
+        <img src="image/wrien.png" alt="written" align="left" height="100" width="100"></div>
+    <div id="center">
+        <p>Work in Progress </p>
+        </p>
+    </div>
+
+
+
+
 
 </body>
 
