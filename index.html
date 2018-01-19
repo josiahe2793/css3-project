@@ -7,16 +7,20 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto" rel="stylesheet">
     <title>index.html</title>
     <style>
+    
+    
+       
         #back {
             background: linear-gradient(to bottom right, MidnightBlue, Steelblue);
-            background-size: cover;
+            background-size: cover; 
             position: absolute;
             background-attachment: fixed;
+           /* Sets the top an left edge of the absolute position*/
             top: 0;
             left: 0;
             min-width: 100%;
             min-height: 100%;
-            z-index: -1;
+            z-index: -1; /*specifies the stack order of an element. greater stack order is always in front lower stack order*/
         }
 
         #head {
@@ -24,6 +28,7 @@
             color: white;
             position: absolute;
             right: 50%;
+            /*Moves title towards the top*/
             transform: translate(50%);
 
         }
@@ -34,7 +39,7 @@
             right: 50%;
             bottom: 70%;
             transform: translate(60%, 150%);
-            text-shadow: 5px 5px black;
+            text-shadow: 5px 5px black; 
             z-index: -1;
             font-size: 22px;
 
@@ -43,10 +48,12 @@
         #sub {
             font-family: Cinzel;
             width: 230px;
-            border: 0px solid red;
-            border-left: 0px solid red;
+            /*Sets top and bottom of border to white for text directly under the title*/
+            border: 0px solid ;
+          
             border-top: 2px solid white;
             border-bottom: 2px solid white;
+            
             position: absolute;
             transform: translate(245%, 150%);
             color: white;
@@ -59,11 +66,13 @@
             color: white;
             right: 50%;
             bottom: 70%;
-            transform: translate(-.2%, -400%) z-index:-1;
+            transform: translate(-.2%, -400%)
+            z-index:-1;
         }
 
-
-
+/*Menu Bar*/
+/*To start  navigation bar needs standard HTML as a base see my HTML*/
+/*Removes the bullets, margins and padding from the list*/
         ul {
             list-style-type: none;
             margin: 0;
@@ -72,33 +81,33 @@
             background-color: #333;
 
         }
-
+       /*Moves tabs to the left*/
         li {
             float: left;
 
         }
-
+       /*Horizontal Nav bar*/
         li a,
         .dropbtn {
-            display: inline-block;
+            display: inline-block; /*specifies the display behavior of an element*/
             color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
 
         }
-
+        /*When the Mouse is over a certain tab it changes color*/
         li a:hover,
         .dropdown:hover .dropbtn {
             background-color: MidnightBlue;
 
         }
-
+         /*specifies the display behavior for content that drops down*/
         li.dropdown {
             display: inline-block;
 
         }
-
+         
         .dropdown-content {
             display: none;
             position: absolute;
@@ -116,7 +125,7 @@
             text-align: left;
 
         }
-
+         /*When the mouse is over one of the dropdown tabs it changes color*/
         .dropdown-content a:hover {
             background-color: #f1f1f1
         }
@@ -130,7 +139,7 @@
 
 
 
-
+         /*Sets animations for the pen*/
         #tran {
 
             width: 100px;
@@ -142,18 +151,18 @@
             animation-duration: 5s;
             animation-timing-function: linear;
             animation-delay: 2s;
-            animation-iteration-count: infinite;
+            animation-iteration-count: infinite; 
             animation-direction: alternate;
-            transition: color 0.5s;
+            transition: color 0.5s/*Time it take s to transition*/; 
             transition-delay: 6s;
         }
-
+        /*When hover become large*/
         #tran:hover {
             width: 120px;
             height: 120px;
         }
 
-
+         /*Path of transition*/
         @keyframes work {
             0% {
                 left: 0px;
@@ -176,7 +185,7 @@
                 top: 0px;
             }
         }
-
+        /*Same as above but with text "Work in Progress"*/
         #center {
             width: 100px;
             height: 100px;
@@ -195,7 +204,7 @@
         #center:hover {
             color: white;
         }
-
+      
         @keyframes fol {
             0% {
                 left: 0px;
@@ -222,7 +231,7 @@
 </head>
 
 <body>
-
+    
     <div id="back"></div>
 
     <div id="head">
@@ -238,9 +247,12 @@
 
 
     <br><br><br><br><br><br><br><br><br>
+    <!--HTML Unordered list for menu-->
     <ul>
+        <!--MAin tabs-->
         <li><a href="#home">Home</a></li>
         <li><a href="#news">Investments</a></li>
+        <!--Subtabs-->
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">The Campaign</a>
             <div class="dropdown-content">
@@ -252,7 +264,7 @@
         </li>
     </ul>
     <br><br>
-
+     
     <div id="text">
         <p>
 
@@ -262,13 +274,13 @@
                 Investment in the campaign of our founder Josiah ElBey's Presidential bid is our chief cornerstone
             </p>
     </div>
-
+      
     <div id="pre">
         <center>
             <h3>New Beginnings Start Here</h3>
         </center>
     </div>
-
+     <!--HTML image-->
     <div id="tran">
         <img src="image/wrien.png" alt="written" align="left" height="100" width="100"></div>
     <div id="center">
